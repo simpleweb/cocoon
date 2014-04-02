@@ -269,6 +269,12 @@ describe Cocoon do
       it_behaves_like "a correctly rendered add link", { :extra_attributes => { 'data-count' => '3' } }
     end
 
+    context 'when adding a limit' do
+      before do
+        @html = @tester.link_to_add_association('add something', @form_obj, :comments, { :limit => 3 })
+      end
+      it_behaves_like "a correctly rendered add link", { :extra_attributes => { 'data-limit' => '3' } }
+    end
   end
 
   context "link_to_remove_association" do
@@ -374,7 +380,7 @@ describe Cocoon do
         before do
           @html = @tester.link_to_remove_association('remove something', @form_obj, { wrapper_class: 'another-class' })
         end
-  
+
         it_behaves_like "a correctly rendered remove link", { extra_attributes: { 'data-wrapper-class' => 'another-class' } }
       end
     end
