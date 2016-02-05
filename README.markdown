@@ -1,6 +1,6 @@
 # cocoon
 
-[![Build Status](https://travis-ci.org/nathanvda/cocoon.png?branch=master)](https://travis-ci.org/nathanvda/cocoon)
+[![Build Status](https://semaphoreci.com/api/v1/simpleweb/cocoon/branches/master/badge.svg)](https://semaphoreci.com/simpleweb/cocoon)
 
 Cocoon makes it easier to handle nested forms.
 
