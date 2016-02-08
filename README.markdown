@@ -226,6 +226,7 @@ This should be called within the form builder.
   - `wrap_object` : a proc that will allow to wrap your object, especially useful if you are using decorators (e.g. draper). See example lower.
   - `force_non_association_create`: if true, it will _not_ create the new object using the association (see lower)
   - `form_name` : the name of the form parameter in your nested partial. By default this is `f`.
+  - `limit` : an integer based counter limit that will interrupt the insertion of a node element and trigger the event `cocoon:limit-reached`.
 
 Optionally, you can omit the name and supply a block that is captured to render the link body (if you want to do something more complicated).
 
